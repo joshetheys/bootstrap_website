@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bootstrap Website</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="#">Joshé</a>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container bg-secondary w-75 mx-auto">
+        <h2 class="display-2 text-center text-white">Contact Me:</h2>
+        <form class="w-75" action="https://formspree.io/f/mknyqejd" method="post">
+    
+            <!-- Name -->
+            <div class="row my-2 align-content-center">
+                <label for="name" class="col-md-2 col-form-label-lg">Name: </label>
+                <div class="col-8">
+                    <input type="text" id="name" name="name" placeholder="Enter your name"  
+                    class="form-control" required>
+                </div>
+            </div>
+    
+            <!-- Surname -->
+            <div class="row my-2 align-content-center">
+                <label for="surname" class="col-md-2 col-form-label-lg">
+                    Surname: </label>
+                <div class="col-8">
+                    <input type="text" id="surname" name="surname" placeholder="Enter your surname" required
+                    class="form-control">    
+                </div>
+            </div>
+    
+            <!-- Email -->
+            <div class="row my-2 align-content-center">
+                <label for="email" class="col-md-2 col-form-label-lg">Email: </label>
+                <div class="col-8">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required
+                    class="form-control">
+                </div>
+            </div>
+    
+            <!-- Message -->
+            <div class="row my-2 align-content-center">
+                <label for="message" class="col-md-2 col-form-label-lg">Message: </label>
+                <div class="col-8 form-floating">
+                    <textarea name="message" id="message" class="h-100 w-100">
+                    </textarea>
+                </div>
+            </div>
+            <div class="row my-2 align-content-center">
+                <label class="col-md-2 col-form-label-lg"></label>
+                <div class="col-8">
+                    <input type="submit" value="Submit"
+                    class="btn btn-success w-100">
+                </div>
+            </div>
+        </form>            
+    </div>
+
+    <footer>
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    
+          <div class="col-6"> 
+            <ul>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1" href="https://www.instagram.com/joshe_2001/?hl=en"><i
+                        class="fa-brands fa-instagram-square fa-5x"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1" href="https://www.linkedin.com/in/josh%C3%A9-theys-599094237/"><i
+                        class="fa fa-linkedin-square fa-5x " aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1" href="https://github.com/joshetheys"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+            </li>
+          </ul>  </div>
+          <div class="col-6">
+            <div class="footer-copyright text-center py-3"> 
+              <p>Website created by Joshé Jade Theys</p>
+              <p>Copyright &copy; 2022</p>
+              </div>
+          </div>
+          
+        </div>
+        
+      </footer>
+
+      <script src="./script/code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+</html>
